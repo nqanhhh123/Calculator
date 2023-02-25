@@ -1,7 +1,40 @@
-.application{
-    
-    height: 60rem;
-    width: 30rem;
+body {
+    background: #a8c0ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+*{
+    font-family: Monocraft, Consolas, 'Courier New', monospace;
+    font-weight: bold;
+}
+
+.box {
+    height: 200px;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    margin:auto;
+    margin-top: 5%;
     
 }
 
+#result {
+    width: inherit;
+    height: 50px;
+    border: solid 2px;
+    background-color: rgb(172, 181, 196);
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    
+}
+
+
+.container button {
+    background-color: rgb(181, 181, 163);
+}
