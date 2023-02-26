@@ -1,10 +1,8 @@
 body {
     background: #a8c0ff;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3f2b96, #a8c0ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 *{
     font-family: Monocraft, Consolas, 'Courier New', monospace;
@@ -24,17 +22,34 @@ body {
 #result {
     width: inherit;
     height: 50px;
-    border: solid 2px;
+    border-top: solid 5px;
+    border-left: solid 5px;
+    border-right: solid 5px;
     background-color: rgb(172, 181, 196);
     text-align: right;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     
 }
+.container{
+    border: solid 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 
+.container row{
+    height: 50px;
+}
 
-.container button {
+.container row button {
+    height: inherit;
     background-color: rgb(181, 181, 163);
 }
+
+.dark_mode{
+    background-color: black;
+    color: white;
+}
+
