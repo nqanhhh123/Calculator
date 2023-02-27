@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <input type="button" onclick="ChangeTheme()">
+    <input type="button" onclick="ChangeTheme()" value="on">
     <div class="box">
         <div id="result"></div>
         <div class="application">
@@ -35,6 +35,11 @@
                     <button class="button col" type="button" value="9">9</button>
                 </div>
                 <div class="row justify-content-center align-items-center">
+                    <button class="button col-6" type="button" value="0">0</button>
+                    <button class="button col-6" type="button" onclick="Equal()">=</button>
+                    
+                </div>
+                <div class="row justify-content-center align-items-center">
                     <button class="button col-3" type="button" value="-">-</button>
                     <button class="button col-3" type="button" value="*">*</button>
                     <button class="button col-3" type="button" value="/">/</button>
@@ -43,7 +48,6 @@
                 <div class="row justify-content-center align-items-center">
                     <button class="button col" type="button" onclick="Delete()">DEL</button>
                     <button class="button col" type="button" onclick="Clear()">AC</button>
-                    <button class="button col" type="button" onclick="Equal()">=</button>
                 </div>
             </div>
         

@@ -1,7 +1,8 @@
 const elements= document.getElementsByClassName("button");
 const result = document.getElementById("result");
 // let ChangeTheme = true;
-let changeTheme = document.getElementById("ChangeTheme")
+let changeTheme = document.getElementById("ChangeTheme");
+let Check = true;
 
 console.log(elements);
 for(let number of elements){
@@ -14,6 +15,7 @@ for(let number of elements){
 const Equal = () => {
     let res = result.innerHTML;
     let answer = eval(res);
+    // "2+2" = 4
     result.innerHTML = answer;
 }
 
@@ -31,3 +33,4 @@ const ChangeTheme = () =>{
         elements[i].classList.toggle("dark_mode");
     }
 }
+
