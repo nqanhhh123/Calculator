@@ -32,5 +32,14 @@ const ChangeTheme = () =>{
     for(var i = 0; i < elements.length; i++){
         elements[i].classList.toggle("dark_mode");
     }
+    if(Check == true){
+        document.getElementById("changeTheme").value = "off";
+        Check = false;
+    }
+    else{
+        document.getElementById("changeTheme").value = "on";
+        Check = true;
+    }
+    
 }
 
